@@ -1,66 +1,71 @@
-# IPL Data Analysis using Apache Spark
+# IPL Data Analysis using Apache Spark and PySpark
 
-This project focuses on data preprocessing and exploratory data analysis (EDA) of IPL cricket data using PySpark. The analysis covers data cleaning, handling missing values, feature engineering, statistical summaries, and visualization of key trends and patterns.
+## 📌 Overview
 
-## 📁 Dataset
-The dataset contains ball-by-ball and match-level information from past IPL seasons.
+This project performs end-to-end exploratory data analysis (EDA) on Indian Premier League (IPL) cricket datasets using **Apache Spark** and **PySpark**. The goal is to extract meaningful insights, visualize trends, and showcase storytelling using data.
 
-## 🚀 Features Implemented
+> 🔍 The analysis includes data cleaning, feature engineering, statistical summarization, and interactive data visualization.
 
-- Missing value analysis and handling
-- Feature engineering (e.g., total runs, average scores)
-- Summary statistics
-- Trend identification (team performance, player analysis)
-- Data transformations using Spark DataFrame APIs
-- Initial visualizations using `matplotlib` and `seaborn`
+---
 
-## 🛠 Technologies Used
+## 📂 Dataset
+
+- **Source:** Kaggle IPL Dataset
+- **Files Used:**
+  - `matches.csv`
+  - `deliveries.csv`
+
+---
+
+## 🛠️ Technologies Used
 
 - Python
-- Apache Spark (PySpark)
-- Jupyter Notebook
-- Pandas, NumPy
-- Matplotlib, Seaborn
+- PySpark (Apache Spark)
+- Pandas (for preprocessing)
+- Plotly (interactive charts)
+- Matplotlib & Seaborn (static visualizations)
+- Streamlit (interactive dashboard - optional for expansion)
 
-## 📊 Visual Insights
+---
 
-The notebook includes:
-- Team win distributions
-- Toss decision patterns
-- Most consistent players and top-performing teams
-- Seasonal trends and anomalies
+## 📈 Key Visualizations and Insights
 
-## 📂 How to Run
+### 1. 🔝 Most Winning Teams (Bar Chart)
+- Bar graph showing total matches won by each team.
+- ✅ **Insight:** Mumbai Indians dominate the IPL with the highest number of wins.
 
-1. Clone the repository:
+### 2. 📌 Toss vs Match Wins (Bar Chart)
+- Shows correlation between toss win and match win.
+- ✅ **Insight:** Toss advantage exists but is not a dominant factor.
+
+### 3. 💪 Top Run Scorers (Horizontal Bar Chart)
+- Batsmen with the highest cumulative runs across seasons.
+- ✅ **Insight:** Virat Kohli leads with exceptional consistency.
+
+### 4. 🎯 Best Bowlers (Bar Chart + Box Plot)
+- Visualized using total wickets and economy rate.
+- ✅ **Insight:** Bhuvneshwar Kumar and Lasith Malinga are standout performers.
+
+### 5. 📍 Matches by City (Pie Chart)
+- Pie chart shows distribution of IPL matches across cities.
+- ✅ **Insight:** Mumbai and Bengaluru host the most games.
+
+---
+
+## 🌟 Data Storytelling
+
+The visualizations go beyond numbers by drawing narratives:
+- **Consistency** of teams like MI & CSK in both tosses and matches.
+- **Geographical dominance** shows which cities are IPL hubs.
+- **Individual legends** are identified through cumulative and per-match stats.
+
+Annotations, color highlights, and chart labels enhance the interpretability of each plot.
+
+---
+
+## 🚀 How to Run
+
+1. Clone the repo:
    ```bash
-   git clone https://github.com/your-username/ipl-data-analysis-spark.git
-   cd ipl-data-analysis-spark
-
-   ## 📊 Visualizations
-
-This project includes multiple IPL insights like:
-
-- Top 10 run scorers
-- Team-wise match victories
-- Top six hitters
-
-All charts are generated using PySpark and visualized using Matplotlib, Seaborn, and Plotly. The interactive version is deployed via Streamlit.
-
-## 📖 Data Storytelling Highlights
-
-- **Virat Kohli** dominates as the top scorer, showing consistency since IPL’s inception.
-- **Mumbai Indians and CSK** top the match wins chart, validating their legacy.
-- **Chris Gayle and AB de Villiers** lead in sixes, reflecting their explosive strike rate.
-
-## 🚀 Interactive Dashboard
-> Launch the dashboard using `streamlit run dashboard.py` to explore visuals interactively.
-### 🎯 Insight 1: Top Run Scorers
-Virat Kohli, the highest run scorer, showcases consistency and dominance. Other top players like Rohit Sharma and Suresh Raina follow closely.
-
-### 🎯 Insight 2: Team Dominance
-Mumbai Indians and Chennai Super Kings lead the charts in match wins, reflecting their strong team performance over seasons.
-
-### 🎯 Insight 3: Boundary Kings
-Chris Gayle and AB de Villiers top the six-hitting charts, proving their explosive style of play.
-
+   git clone https://github.com/yourusername/IPL-Data-analysis.git
+   cd IPL-Data-analysis
