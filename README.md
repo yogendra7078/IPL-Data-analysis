@@ -36,3 +36,31 @@ The notebook includes:
    ```bash
    git clone https://github.com/your-username/ipl-data-analysis-spark.git
    cd ipl-data-analysis-spark
+
+   ## 📊 Visualizations
+
+This project includes multiple IPL insights like:
+
+- Top 10 run scorers
+- Team-wise match victories
+- Top six hitters
+
+All charts are generated using PySpark and visualized using Matplotlib, Seaborn, and Plotly. The interactive version is deployed via Streamlit.
+
+## 📖 Data Storytelling Highlights
+
+- **Virat Kohli** dominates as the top scorer, showing consistency since IPL’s inception.
+- **Mumbai Indians and CSK** top the match wins chart, validating their legacy.
+- **Chris Gayle and AB de Villiers** lead in sixes, reflecting their explosive strike rate.
+
+## 🚀 Interactive Dashboard
+> Launch the dashboard using `streamlit run dashboard.py` to explore visuals interactively.
+### 🎯 Insight 1: Top Run Scorers
+Virat Kohli, the highest run scorer, showcases consistency and dominance. Other top players like Rohit Sharma and Suresh Raina follow closely.
+
+### 🎯 Insight 2: Team Dominance
+Mumbai Indians and Chennai Super Kings lead the charts in match wins, reflecting their strong team performance over seasons.
+
+### 🎯 Insight 3: Boundary Kings
+Chris Gayle and AB de Villiers top the six-hitting charts, proving their explosive style of play.
+
